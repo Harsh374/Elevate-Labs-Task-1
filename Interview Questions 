@@ -1,0 +1,60 @@
+**1. Types of Missing Data:**
+- **MCAR (Missing Completely At Random):** No pattern, unrelated to any variable.
+- **MAR (Missing At Random):** Systematic relationship with observed data but not with missing data itself.
+- **MNAR (Missing Not At Random):** Missingness is related to the unobserved data.
+
+---
+
+**2. Handling Categorical Variables:**
+- **Label Encoding:** Assigns a unique integer to each category (works for ordinal data).
+- **One-Hot Encoding:** Creates binary columns for each category (good for nominal data).
+- **Ordinal Encoding:** Maps categories to integers in a meaningful order.
+- **Target Encoding / Frequency Encoding:** Uses mean target values or category frequencies (used with caution to prevent leakage).
+
+---
+
+**3. Normalization vs Standardization:**
+- **Normalization (Min-Max Scaling):** Scales values to a range [0,1]. Formula:  
+  `(x - min) / (max - min)`
+- **Standardization (Z-score Scaling):** Centers data to have mean 0 and std dev 1. Formula:  
+  `(x - mean) / std`
+
+---
+
+**4. Detecting Outliers:**
+- **Statistical methods:** Z-score, IQR (Interquartile Range).
+- **Visualization:** Box plots, scatter plots.
+- **Model-based:** Isolation Forest, DBSCAN, or autoencoders.
+
+---
+
+**5. Importance of Preprocessing in ML:**
+- Ensures **data quality**, **consistency**, and **formatting** for model compatibility.
+- Reduces **noise**, handles **missing values**, and transforms features for better learning.
+- Prevents **data leakage** and improves **model performance**.
+
+---
+
+**6. One-Hot Encoding vs Label Encoding:**
+- **One-Hot:** Binary vectors for each category. Good for unordered data. Increases dimensionality.
+- **Label:** Assigns integers. Suitable for ordered categories but can mislead models if used with nominal data.
+
+---
+
+**7. Handling Data Imbalance:**
+- **Resampling:** Oversampling (e.g., SMOTE), undersampling.
+- **Class weighting:** Adjust model loss function.
+- **Algorithm choice:** Use models that handle imbalance well (e.g., XGBoost).
+- **Generate synthetic data** or use anomaly detection strategies.
+
+---
+
+**8. Can Preprocessing Affect Model Accuracy?**
+Yes, dramatically. Proper preprocessing improves:
+- Feature interpretability.
+- Model convergence speed.
+- Overall accuracy and generalization.
+
+Poor preprocessing can cause bias, overfitting, or poor predictions.
+
+---
