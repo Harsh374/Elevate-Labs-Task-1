@@ -71,14 +71,13 @@ https://colab.research.google.com/drive/1cK3PD5Y-DQIftFaJyP6jx_FXEWk0V7VR
 
 ---
 
-
-🤝 Contributing
+## 🤝 Contributing
 Pull requests and suggestions are welcome. For major changes, please open an issue first to discuss.
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License.
 
-✨ Acknowledgements
+## ✨ Acknowledgements
 Kaggle Titanic Competition
 
 Scikit-learn, Pandas, and Seaborn communities
